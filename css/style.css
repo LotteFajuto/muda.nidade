@@ -9,8 +9,8 @@
 }
 
 :root {
-    --primary-blue: #2c3e50;
-    --secondary-blue: #34495e;
+    --primary-blue: #5d8aa8;
+    --secondary-blue: #6495ed;
     --orange: #ff8c42;
     --dark-orange: #e67e22;
     --light-gray: #ecf0f1;
@@ -77,7 +77,7 @@ body {
 }
 
 body.landing-page {
-    background-color: #1a2332;
+    background-color: #7cb9e8;
 }
 
 html {
@@ -136,7 +136,7 @@ html {
 
 /* Barra de navegação destacada na landing page */
 .landing-nav-bar {
-    background-color: #2c3e50;
+    background-color: #6495ed;
     padding: 15px 0;
     display: flex;
     justify-content: center;
@@ -173,11 +173,11 @@ html {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .user-profile img {
@@ -216,7 +216,7 @@ html {
 }
 
 .landing-page .hero-banner {
-    background: linear-gradient(135deg, rgba(26, 35, 50, 0.7), rgba(44, 62, 80, 0.5)), url('../imagens/background.png');
+    background: linear-gradient(135deg, rgba(93, 138, 168, 0.4), rgba(100, 149, 237, 0.3)), url('../imagens/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -235,10 +235,10 @@ html {
 
 .hero-subtitle {
     font-size: 22px;
-    color: var(--orange);
+    color: var(--text-dark);
     font-weight: 300;
     font-family: 'Josefin Slab', serif;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .login-btn {
@@ -526,7 +526,7 @@ html {
    ========================================== */
 
 .org-profile-header {
-    background: linear-gradient(180deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    background: linear-gradient(180deg, #1a2332 0%, #1a2332 100%);
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 20px;
@@ -544,16 +544,18 @@ html {
     height: 150px;
     border-radius: 50%;
     background-color: var(--white);
-    padding: 20px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .org-logo img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    padding: 0;
 }
 
 .org-details h1 {
@@ -899,7 +901,7 @@ html {
    ========================================== */
 
 .footer {
-    background-color: var(--secondary-blue);
+    background-color: #1a2332;
     padding: 50px 50px 30px;
     margin-top: 50px;
     border-top: 3px solid rgba(255, 255, 255, 0.08);

@@ -11,35 +11,39 @@
 </head>
 <body class="landing-page">
     <!-- Navegação -->
-    <nav class="navbar" style="position: absolute; width: 100%; z-index: 100;">
-        <div class="logo" style="font-family: 'Josefin Slab', serif;">muda.nidade</div>
+    <nav class="navbar" style="position: fixed; top: 0; width: 100%; z-index: 1000; background-color: #5d8aa8; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+        <a href="landing.html" class="logo" style="font-family: 'Josefin Slab', serif; text-decoration: none; color: inherit; cursor: pointer; font-size: 40px;">muda.nidade</a>
         <ul class="nav-links">
-            <li><a href="projetos.html" class="nav-tab">projetos</a></li>
-            <li><a href="voluntariado.html" class="nav-tab">voluntariado</a></li>
-            <li><a href="#sobre" class="nav-tab">sobre</a></li>
+            <li><a href="#projetos">projetos</a></li>
+            <li><a href="#voluntariado">voluntariado</a></li>
+            <li><a href="#sobre-nos">sobre</a></li>
         </ul>
     </nav>
 
-    <!-- Barra de Navegação Destacada -->
-    <div class="landing-nav-bar">
-        <a href="#projetos" class="landing-nav-item">projetos</a>
-        <a href="#voluntariado" class="landing-nav-item">voluntariado</a>
-        <a href="#sobre-nos" class="landing-nav-item">sobre</a>
-    </div>
 
     <!-- Hero Section -->
-    <div class="hero-banner" style="height: 500px; margin: 0; border-radius: 0;">
-        <h1 class="hero-title">muda.nidade</h1>
-        <p class="hero-subtitle">a mudança que só acontece em comunidade</p>
-        <button class="login-btn" onclick="window.location.href='index.html'">login</button>
-        <p style="font-size: 12px; margin-top: 10px;">Cadastre-se</p>
+    <div class="hero-banner" style="height: 650px; margin: 0; margin-top: 60px; border-radius: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <h1 class="hero-title" style="margin-bottom: -20px;">muda.nidade</h1>
+            <div style="background-color: rgba(255, 140, 66, 0.85); padding: 4px 12px; border-radius: 6px; margin-top: 5px; margin-bottom: 5px;">
+                <p style="font-size: 16px; color: white; margin: 0;">a mudança que só acontece em comunidade</p>
+            </div>
+            <button class="login-btn" onclick="window.location.href='index.html'" style="margin-top: 30px;">login</button>
+            <p style="font-size: 12px; margin-top: 15px;">Cadastre-se</p>
+        </div>
     </div>
 
     <!-- Espaçamento Azul -->
-    <div style="height: 20px; background-color: #1a2332;"></div>
+    <div style="height: 20px; background-color: #7cb9e8;"></div>
+
+    <!-- Caixa de informação -->
+    <div style="background-color: #2c3e50; padding: 15px 25px; margin: 0 auto; max-width: 800px; text-align: center; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; gap: 12px;">
+        <span style="font-size: 20px;">💡</span>
+        <p style="color: white; font-size: 16px; font-weight: 400; line-height: 1.5; margin: 0;">Um lugar para você conhecer projetos, divulgar, se conectar a pessoas e fazer a diferença.</p>
+    </div>
 
     <!-- Expositor de Projetos -->
-    <div style="background: linear-gradient(180deg, #1a2332 0%, #f8f9fa 20%, white 100%); padding: 80px 0 60px 0; overflow: hidden;">
+    <div style="background: linear-gradient(180deg, #7cb9e8 0%, #f8f9fa 20%, white 100%); padding: 80px 0 60px 0; overflow: hidden;">
         <h2 style="color: #2c3e50; text-align: center; font-size: 32px; margin-bottom: 20px; font-family: 'Josefin Slab', serif;">Projetos em Destaque</h2>
         <p style="color: #7f8c8d; text-align: center; font-size: 20px; margin-bottom: 40px;">Conheça as organizações que fazem a diferença</p>
         <div class="projects-carousel">
@@ -87,6 +91,90 @@
                 <div class="project-logo-item">
                     <img src="imagens/lontra_logo.jpg" alt="Lontra" onerror="this.style.display='none'">
                 </div>
+                <div class="project-logo-item">
+                    <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/bemreciclagem_logo.jpeg" alt="Bem Reciclagem" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/remar_logo.jpeg" alt="Remar" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/cicloorganico_logo.png" alt="Ciclo Orgânico" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/criadouro_logo.png" alt="Criadouro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/terreiro_logo.webp" alt="Terreiro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/lontra_logo.jpg" alt="Lontra" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/bemreciclagem_logo.jpeg" alt="Bem Reciclagem" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/remar_logo.jpeg" alt="Remar" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/cicloorganico_logo.png" alt="Ciclo Orgânico" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/criadouro_logo.png" alt="Criadouro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/terreiro_logo.webp" alt="Terreiro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/lontra_logo.jpg" alt="Lontra" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/bemreciclagem_logo.jpeg" alt="Bem Reciclagem" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/remar_logo.jpeg" alt="Remar" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/cicloorganico_logo.png" alt="Ciclo Orgânico" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/criadouro_logo.png" alt="Criadouro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/terreiro_logo.webp" alt="Terreiro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/lontra_logo.jpg" alt="Lontra" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/bemreciclagem_logo.jpeg" alt="Bem Reciclagem" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/remar_logo.jpeg" alt="Remar" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/cicloorganico_logo.png" alt="Ciclo Orgânico" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/criadouro_logo.png" alt="Criadouro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/terreiro_logo.webp" alt="Terreiro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/lontra_logo.jpg" alt="Lontra" onerror="this.style.display='none'">
+                </div>
             </div>
         </div>
     </div>
@@ -94,7 +182,7 @@
 
     
     <!-- Seção de Projetos -->
-    <div id="projetos" style="padding: 80px 50px; background-color: #1a2332;">
+    <div id="projetos" style="padding: 80px 50px; background-color: #7cb9e8;">
         <div style="background-color: #ecf0f1; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
             
             <!-- Cabeçalho da Seção -->
@@ -147,7 +235,7 @@
                 </div>
 
                 <!-- Card 3: Faça Parte -->
-                <div onclick="window.location.href='projetos.html'" style="position: relative; height: 320px; background: url('imagens/caminhosremar.png'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;" onmouseover="this.querySelector('.card-overlay').style.opacity='1'" onmouseout="this.querySelector('.card-overlay').style.opacity='0.85'">
+                <div onclick="window.location.href='voluntariado.html'" style="position: relative; height: 320px; background: url('imagens/caminhosremar.png'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;" onmouseover="this.querySelector('.card-overlay').style.opacity='1'" onmouseout="this.querySelector('.card-overlay').style.opacity='0.85'">
                     <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(26, 35, 50, 0.85), rgba(255, 140, 66, 0.85)); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; opacity: 0.85; transition: opacity 0.3s ease;">
                         <h3 style="color: white; font-size: 26px; margin-bottom: 12px; font-family: 'Josefin Slab', serif; font-weight: 600;">Faça Parte</h3>
                         <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5; margin-bottom: 18px;">Conecte-se com uma comunidade que quer fazer a diferença</p>
@@ -205,7 +293,7 @@
     </div>
 
     <!-- Seção de Voluntariado -->
-    <div id="voluntariado" style="padding: 60px 50px; background-color: #1a2332; margin-top: 20px;">
+    <div id="voluntariado" style="padding: 60px 50px; background-color: #7cb9e8; margin-top: 20px;">
         <div style="background-color: #ecf0f1; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
             
             <!-- Cabeçalho da Seção -->
@@ -283,10 +371,10 @@
     </div>
 
     <!-- Espaçamento Azul -->
-    <div style="height: 20px; background-color: #1a2332;"></div>
+    <div style="height: 20px; background-color: #7cb9e8;"></div>
 
     <!-- Seção Expositor de Projetos Parceiros -->
-    <div style="padding: 80px 50px; background-color: #1a2332;">
+    <div style="padding: 80px 50px; background-color: #7cb9e8;">
         <div style="background-color: #ff8c42; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
             
             <!-- Cabeçalho -->
@@ -297,20 +385,20 @@
             <!-- Container de Logos -->
             <div style="display: flex; gap: 15px; overflow-x: auto; padding: 20px 10px; justify-content: center; flex-wrap: wrap; align-items: center;">
                     
-                    <div style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <a href="https://www.atados.com.br" target="_blank" rel="noopener" style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-decoration: none; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                         <img src="imagens/atados_logo.png" alt="Atados" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;" onerror="this.style.display='none'">
-                    </div>
-                    <div style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    </a>
+                    <a href="https://www.workaway.info/pt" target="_blank" rel="noopener" style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-decoration: none; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                         <img src="imagens/workway_logo.png" alt="Workway" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;" onerror="this.style.display='none'">
-                    </div>
+                    </a>
 
-                    <div style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <a href="https://transformabrasil.com.br" target="_blank" rel="noopener" style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-decoration: none; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                         <img src="imagens/transforma_logo.png" alt="Transforma" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;" onerror="this.style.display='none'">
-                    </div>
+                    </a>
 
-                    <div style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <a href="https://www.ovg.org.br/site" target="_blank" rel="noopener" style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-decoration: none; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                         <img src="imagens/ovg_logo.png" alt="OVG" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;" onerror="this.style.display='none'">
-                    </div>
+                    </a>
             </div>
 
             <!-- CTA -->
@@ -322,10 +410,10 @@
     </div>
 
     <!-- Espaçamento Azul -->
-    <div style="height: 20px; background-color: #1a2332;"></div>
+    <div style="height: 20px; background-color: #7cb9e8;"></div>
 
     <!-- Seção Sobre Nós -->
- <div id="sobre-nos" style="padding: 20px 50px; background-color: #1a2332;">
+ <div id="sobre-nos" style="padding: 20px 50px; background-color: #7cb9e8;">
     <div style="background-color: #ecf0f1; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
         <h2 style="color: #2c3e50; font-size: 36px; margin-bottom: 40px; font-family: 'Josefin Slab', serif;">sobre nós (mim)</h2>
         
@@ -360,7 +448,7 @@
                 <!-- Botões -->
                 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
                     <button class="cta-button" onclick="window.open('https://www.behance.net/annamathias1', '_blank')" style="font-family: 'Josefin Slab', serif; padding: 12px 35px;">Portfólio</button>
-                    <button class="cta-button" onclick="window.open('mailto:contato@email.com')" style="font-family: 'Josefin Slab', serif; padding: 12px 35px; background-color: white; color: #ff8c42; border: 3px solid #ff8c42;">Contatos</button>
+                    <button class="cta-button" onclick="window.open('mailto:dsgannamathias@gmail.com')" style="font-family: 'Josefin Slab', serif; padding: 12px 35px; background-color: white; color: #ff8c42; border: 3px solid #ff8c42;">Contatos</button>
                 </div>
             </div>
         </div>
@@ -369,7 +457,7 @@
 
 
     <!-- Espaçamento Azul -->
-    <div style="height: 20px; background-color: #1a2332;"></div>
+    <div style="height: 20px; background-color: #7cb9e8;"></div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -381,7 +469,7 @@
                     <a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
                     <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
-                    <a href="mailto:contato@muda.nidade.com" aria-label="E-mail">✉</a>
+                    <a href="mailto:dsgannamathias@gmail.com" aria-label="E-mail">✉</a>
                 </div>
             </div>
 
@@ -408,8 +496,8 @@
             <div class="footer-section">
                 <h3>Contato</h3>
                 <ul>
-                    <li><a href="mailto:contato@muda.nidade.com">contato@muda.nidade.com</a></li>
-                    <li><a href="https://wa.me/5521999999999" target="_blank" rel="noopener">+55 21 99999-9999</a></li>
+                    <li><a href="mailto:dsgannamathias@gmail.com">dsgannamathias@gmail.com</a></li>
+                    <li><a href="https://wa.me/5521995909330" target="_blank" rel="noopener">+55 21 99590-9330</a></li>
                     <li>Rio de Janeiro • RJ</li>
                     <li><a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener">@muda.nidade</a></li>
                 </ul>
@@ -420,12 +508,39 @@
             <div class="footer-bottom-links">
                 <a href="#">Termos de Uso</a>
                 <a href="#">Política de Privacidade</a>
-                <a href="mailto:contato@muda.nidade.com">Fale com a gente</a>
+                <a href="mailto:dsgannamathias@gmail.com">Fale com a gente</a>
             </div>
         </div>
     </footer>
 
+    <!-- Botão de voltar ao topo -->
+    <button id="btnTopo" style="position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background-color: #ff8c42; color: white; border: none; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer; display: flex; justify-content: center; align-items: center; font-size: 24px; z-index: 1000; transition: all 0.3s ease; opacity: 0;" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </button>
+
     <script src="js/script.js"></script>
+    <script>
+        // Adiciona efeito hover ao botão de voltar ao topo
+        document.getElementById('btnTopo').addEventListener('mouseover', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 6px 15px rgba(0,0,0,0.4)';
+        });
+        
+        document.getElementById('btnTopo').addEventListener('mouseout', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 4px 10px rgba(0,0,0,0.3)';
+        });
+        
+        // Controla a visibilidade do botão com base na posição de rolagem
+        window.addEventListener('scroll', function() {
+            // Mostrar o botão quando rolar além de 300px
+            if (window.scrollY > 300) {
+                document.getElementById('btnTopo').style.opacity = '1';
+            } else {
+                document.getElementById('btnTopo').style.opacity = '0';
+            }
+        });
+    </script>
 </body>
 </html>
 

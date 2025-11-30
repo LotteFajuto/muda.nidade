@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Projeto - Muda.nidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <a href="landing.html" class="logo" style="font-family: 'Josefin Slab', serif; text-decoration: none; color: inherit; cursor: pointer;">muda.nidade</a>
+        <ul class="nav-links">
+            <li><a href="projetos.html">projetos</a></li>
+            <li><a href="voluntariado.html">voluntariado</a></li>
+            <li><a href="perfil.html">perfil</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <h1 style="font-size: 42px; margin: 40px 0 20px; font-family: 'Josefin Slab', serif; text-align: center;">
+            Cadastrar <span style="color: #ff8c42;">Projeto</span>
+        </h1>
+        
+        <p style="text-align: center; color: #1a2332; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+            Preencha os dados abaixo para cadastrar seu projeto na plataforma. Todos os campos marcados com * são obrigatórios.
+        </p>
+
+        <!-- Formulário de Cadastro -->
+        <div style="background-color: #ecf0f1; border-radius: 20px; padding: 40px; margin-bottom: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+            <form id="cadastroProjeto" onsubmit="return false;">
+                <!-- Informações Básicas -->
+                <h3 style="color: #2c3e50; margin-bottom: 20px; font-family: 'Josefin Slab', serif; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                    Informações Básicas
+                </h3>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                    <div>
+                        <label for="nomeProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Nome do Projeto *
+                        </label>
+                        <input type="text" id="nomeProjeto" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                        
+                        <label for="handleProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Handle (ex: @seuprojeto) *
+                        </label>
+                        <input type="text" id="handleProjeto" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                        
+                        <label for="siteProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Site
+                        </label>
+                        <input type="url" id="siteProjeto" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                    </div>
+                    
+                    <div>
+                        <label for="logoProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Logo do Projeto *
+                        </label>
+                        <div style="border: 2px dashed #ddd; border-radius: 10px; height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; margin-bottom: 15px;" onclick="document.getElementById('logoUpload').click()">
+                            <img src="imagens/icones/Camera.png" alt="" class="icon icon--large" style="margin-bottom: 10px;">
+                            <span style="color: #7f8c8d;">Clique para fazer upload</span>
+                            <input type="file" id="logoUpload" style="display: none;" accept="image/*">
+                        </div>
+                        
+                        <label for="corFundo" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Cor de fundo do logo
+                        </label>
+                        <input type="color" id="corFundo" value="#ffffff" style="width: 100%; height: 40px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                    </div>
+                </div>
+                
+                <!-- Localização e Contato -->
+                <h3 style="color: #2c3e50; margin-bottom: 20px; font-family: 'Josefin Slab', serif; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                    Localização e Contato
+                </h3>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                    <div>
+                        <label for="cidadeProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Cidade *
+                        </label>
+                        <input type="text" id="cidadeProjeto" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                        
+                        <label for="estadoProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Estado *
+                        </label>
+                        <select id="estadoProjeto" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                            <option value="">Selecione...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="emailProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Email de Contato *
+                        </label>
+                        <input type="email" id="emailProjeto" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                        
+                        <label for="telefoneProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Telefone
+                        </label>
+                        <input type="tel" id="telefoneProjeto" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                    </div>
+                </div>
+                
+                <!-- Descrição e Tags -->
+                <h3 style="color: #2c3e50; margin-bottom: 20px; font-family: 'Josefin Slab', serif; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                    Descrição e Tags
+                </h3>
+                
+                <div style="margin-bottom: 30px;">
+                    <label for="descricaoProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                        Descrição do Projeto *
+                    </label>
+                    <textarea id="descricaoProjeto" required rows="6" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px; resize: vertical;"></textarea>
+                    
+                    <label for="tagsProjeto" style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                        Tags (separadas por vírgula) *
+                    </label>
+                    <input type="text" id="tagsProjeto" required placeholder="Ex: sustentabilidade, reciclagem, meio ambiente" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+                    
+                    <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 10px;" id="tagsPreview">
+                        <!-- Tags serão adicionadas aqui via JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Estatísticas -->
+                <h3 style="color: #2c3e50; margin-bottom: 20px; font-family: 'Josefin Slab', serif; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                    Estatísticas (opcional)
+                </h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 30px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Estatística 1
+                        </label>
+                        <input type="text" placeholder="Label" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 10px;">
+                        <input type="text" placeholder="Valor" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd;">
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Estatística 2
+                        </label>
+                        <input type="text" placeholder="Label" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 10px;">
+                        <input type="text" placeholder="Valor" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd;">
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: bold;">
+                            Estatística 3
+                        </label>
+                        <input type="text" placeholder="Label" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 10px;">
+                        <input type="text" placeholder="Valor" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd;">
+                    </div>
+                </div>
+                
+                <!-- Galeria de Imagens -->
+                <h3 style="color: #2c3e50; margin-bottom: 20px; font-family: 'Josefin Slab', serif; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                    Galeria de Imagens
+                </h3>
+                
+                <div style="margin-bottom: 30px;">
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px;">
+                        <div style="border: 2px dashed #ddd; border-radius: 10px; height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer;" onclick="document.getElementById('galeriaUpload').click()">
+                            <img src="imagens/icones/Camera.png" alt="" class="icon icon--large" style="margin-bottom: 10px;">
+                            <span style="color: #7f8c8d;">Adicionar imagem</span>
+                        </div>
+                        <!-- Aqui seriam exibidas as imagens adicionadas -->
+                    </div>
+                    <input type="file" id="galeriaUpload" style="display: none;" accept="image/*" multiple>
+                    <p style="color: #7f8c8d; font-size: 13px;">Você pode adicionar até 5 imagens para a galeria do seu projeto.</p>
+                </div>
+                
+                <!-- Botões de Ação -->
+                <div style="display: flex; justify-content: center; gap: 20px; margin-top: 40px;">
+                    <button type="button" class="cta-button" style="background-color: white; color: #7f8c8d; border: 2px solid #ddd; padding: 15px 40px;" onclick="window.location.href='projetos.html'">Cancelar</button>
+                    <button type="submit" class="cta-button" style="padding: 15px 40px;" onclick="alert('Projeto cadastrado com sucesso! Em breve sua página estará disponível após revisão.')">Cadastrar Projeto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">muda.nidade</span>
+                <p>Conectamos pessoas, projetos e organizações que desejam gerar impacto social e ambiental positivo em todo o Brasil.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+                    <a href="mailto:dsgannamathias@gmail.com" aria-label="E-mail">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Plataforma</h3>
+                <ul>
+                    <li><a href="landing.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guia da Comunidade</a></li>
+                    <li><a href="projetos.html#projectsGrid">Mapa e Tags</a></li>
+                    <li><a href="#">Portal de Dados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="mailto:dsgannamathias@gmail.com">dsgannamathias@gmail.com</a></li>
+                    <li><a href="https://wa.me/5521995909330" target="_blank" rel="noopener">+55 21 99590-9330</a></li>
+                    <li>Rio de Janeiro • RJ</li>
+                    <li><a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener">@muda.nidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© 2025 muda.nidade. Todos os direitos reservados.</small>
+            <div class="footer-bottom-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="mailto:dsgannamathias@gmail.com">Fale com a gente</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Pré-visualização de tags
+        document.getElementById('tagsProjeto').addEventListener('input', function() {
+            const tagsInput = this.value;
+            const tagsArray = tagsInput.split(',').map(tag => tag.trim()).filter(tag => tag.length > 0);
+            const tagsPreview = document.getElementById('tagsPreview');
+            
+            tagsPreview.innerHTML = '';
+            
+            tagsArray.forEach(tag => {
+                const tagElement = document.createElement('span');
+                tagElement.className = 'tag';
+                tagElement.textContent = tag;
+                tagsPreview.appendChild(tagElement);
+            });
+        });
+    </script>
+</body>
+</html>

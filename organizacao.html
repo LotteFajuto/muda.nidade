@@ -12,7 +12,7 @@
 <body>
     <!-- Navegação -->
     <nav class="navbar">
-        <a href="index.html" class="logo" style="font-family: 'Josefin Slab', serif; text-decoration: none; color: inherit; cursor: pointer;">muda.nidade</a>
+        <a href="landing.html" class="logo" style="font-family: 'Josefin Slab', serif; text-decoration: none; color: inherit; cursor: pointer;">muda.nidade</a>
         <ul class="nav-links">
             <li><a href="projetos.html">projetos</a></li>
             <li><a href="voluntariado.html">voluntariado</a></li>
@@ -120,7 +120,7 @@
                 <div style="background-color: #ecf0f1; border-radius: 20px; padding: 25px; margin-bottom: 20px;">
                     <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 15px;">
                         <div style="width: 50px; height: 50px; border-radius: 50%; background-color: white; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                            <img src="imagens/pessoas/pessoa1.jpg" alt="Usuário" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="imagens/pessoas/eu.jpg" alt="Usuário" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <input type="text" placeholder="Escreva algo sobre este projeto..." style="flex: 1; padding: 12px 18px; border: none; border-radius: 25px; font-size: 14px; background-color: white;" onclick="showAlert('Funcionalidade de post em desenvolvimento')">
                     </div>
@@ -160,7 +160,7 @@
                     <a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
                     <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
-                    <a href="mailto:contato@muda.nidade.com" aria-label="E-mail">✉</a>
+                    <a href="mailto:dsgannamathias@gmail.com" aria-label="E-mail">✉</a>
                 </div>
             </div>
 
@@ -187,8 +187,8 @@
             <div class="footer-section">
                 <h3>Contato</h3>
                 <ul>
-                    <li><a href="mailto:contato@muda.nidade.com">contato@muda.nidade.com</a></li>
-                    <li><a href="https://wa.me/5521999999999" target="_blank" rel="noopener">+55 21 99999-9999</a></li>
+                    <li><a href="mailto:dsgannamathias@gmail.com">dsgannamathias@gmail.com</a></li>
+                    <li><a href="https://wa.me/5521995909330" target="_blank" rel="noopener">+55 21 99590-9330</a></li>
                     <li>Rio de Janeiro • RJ</li>
                     <li><a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener">@muda.nidade</a></li>
                 </ul>
@@ -199,7 +199,7 @@
             <div class="footer-bottom-links">
                 <a href="#">Termos de Uso</a>
                 <a href="#">Política de Privacidade</a>
-                <a href="mailto:contato@muda.nidade.com">Fale com a gente</a>
+                <a href="mailto:dsgannamathias@gmail.com">Fale com a gente</a>
             </div>
         </div>
     </footer>
@@ -957,7 +957,13 @@
 
             const logoWrapper = document.querySelector('.org-logo');
             if (logoWrapper) {
-                logoWrapper.style.backgroundColor = projectId === 'remar' ? '#000000' : '#ffffff';
+                if (projectId === 'remar') {
+                    logoWrapper.style.backgroundColor = '#000000';
+                } else if (projectId === 'agua-camelo') {
+                    logoWrapper.style.backgroundColor = '#193fa8'; // Azul da logo do Água Camelo
+                } else {
+                    logoWrapper.style.backgroundColor = '#ffffff';
+                }
             }
 
                 document.getElementById('orgName').textContent = project.name;
